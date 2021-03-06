@@ -1,0 +1,622 @@
+@media(min-width: 1025px){
+    /* Адаптив для средних экранов */
+    header{
+        justify-content: center;
+        height: 10vh;
+    }
+    .header__logo{
+        background: url(../img/Desktop/Logo-Horiz.png);
+        background-size: cover;
+        width: 160px;
+        height: 10vh;
+    }
+    .header__burger{
+        display: none;
+    }
+    .header__phone{
+        opacity: 0.5;
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 15px;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-right: 20px;
+        margin-left: 20px;
+        cursor: pointer
+    }
+    .header__phone:hover{
+        opacity: 1;
+    }
+    .header__menu{
+        display: flex;
+    }
+    .header__menu-link{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 14px;
+        color: #FF834E;
+        text-decoration: none;
+        margin-left: 40px;
+    }
+    .header__menu-link:hover{
+        text-decoration: underline;
+    }
+    main{
+        background-color: rgba(22, 22, 22, 0.9);
+    }
+    .head{
+        background: url(../img/Desktop/BlumeBg.png),
+         url(../img/Desktop/CodeFade.png),
+         url(../img/Desktop/BottomFade.png),
+         radial-gradient(105.09% 130.3% at 52.97% 67.41%, rgba(22, 22, 22, 0) 0%, #161616 100%);
+        background-blend-mode: soft-light, multiply, screen, screen;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-size: cover, 40%, cover, cover;
+        background-position: 100%, bottom left, bottom, 100%;
+        height: 75vh;
+        padding: 40px 40px 60px 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .head__container{
+        height: 34vw;
+        width: 40vw;
+        max-width: 825px;
+        padding: 60px 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-right: 5vw;
+    }
+    .head__picture-desktop{
+        width: 22vw;
+        height: 30vw;
+        border-radius: 150px;
+        background: url(../img/Hotel.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover, cover;
+    }
+    .head__subtitle{
+        margin-bottom: 10px;
+    }
+    .head__cart{
+        width: 16px;
+    }
+    .head__subtitle h3{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FF834E;
+        margin-left: 7px;
+    }
+    .head__title{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 45px;
+        color: #FFFFFF;
+    }
+    .head__info{
+        display: auto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(255, 255, 255, 0.8);
+        margin-top: 15px;
+    }
+    .head__picture{
+        display: none;
+    }
+    .head__contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+    }
+    .head__button-call{
+        order: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 24vw;
+        height: 4vw;
+        background: #FF834E;
+        box-shadow: 0px 4.5px 9.1 rgba(239, 139, 84, 0.2);
+        border: none;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.7);
+        text-align: left;
+        cursor: pointer;
+    }
+    .head__button-call:hover{
+        opacity: 0.8;
+    }
+    .head__button-mobile{
+        display: none;
+    }
+    .head__button-desktop{
+        margin: 10px;
+    }
+    .head__pointer-call{
+        background-color:#DE774B;
+        background:#DE774B url(../img/Union.png);
+        background-blend-mode: screen;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 4vw;
+        height: 4vw;
+        cursor: pointer;
+    }
+    .head__info-call{
+        order: 1;
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        font-variant: small-caps;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        opacity: 1;
+    }
+    .form{
+        height: 75vh;
+        min-height: 75vh;
+        background:#171718;;
+        background-image: url(../img/Desktop/BlumeBG-5.png), url(../img/Desktop/Geometry.png), url(../img/Desktop/CodeFade.png);
+        background-blend-mode: unset;
+        background-size: 100%, auto, 50% 50%;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center top -20px, center, bottom left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .form__order{
+        min-width: 30vw;
+        max-width: 50vw;
+        background: rgb(255, 255, 255);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        padding: 15px;
+        margin-bottom: 0;
+    }
+    .form__order input, .form__order textarea{
+        /* width: 100%; */
+        padding: 2vh 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        background: #F6F6F6;
+        border: 0.5px solid #D0D0D0;
+        color: #595959;
+        margin-bottom: 10px;
+    }
+    .form__order-info{
+        height: 80px;
+    }
+    .form__order-info::placeholder{
+        float: left top;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .form__order-ok{
+        display: flex;
+    }
+    .form__logo-ok{
+        width: 13px;
+        height: 12px;
+        border: 1px solid #D0D0D0;
+        box-sizing: border-box;
+        border-radius: 2px;
+        margin-right: 14px;
+    }
+    .form__order-ok span{
+        max-width: 240px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 10px;        
+        color: #595959;
+    }
+    .form__order button{
+        width: 100%;
+    }
+    .form__order img{
+        width: 120px;
+        margin: 10px 0;
+    }
+    .form__order button{
+        padding: 15px;
+        border: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        color: #FFFFFF;
+        background: linear-gradient(158.11deg, #DE9B55 -8.73%, #EE5432 93.23%);
+        box-shadow: 0px 4px 4px rgba(222, 155, 85, 0.3);
+    }
+    footer{
+        min-height: 15vh;
+        height: 15vh;
+        padding: 0 15% 0 15%;
+        background-color:#202020;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer__logo{
+        width: 115px;
+        height: 60px;
+        background-image: url(../img/Logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0;
+    }
+    .footer__social, .footer__contacts{
+        text-align: center;
+    }
+    .footer__social a, .footer__contacts a, .footer__contacts p,.footer__map h3{
+        display: block;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 12px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 8px;
+    }
+    .footer__contacts h3, .footer__social h3{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .footer__social{
+        margin: 0;
+    }
+    .footer__map{
+        min-width: 140px;
+        height: 82px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer__map h3{
+        width: 40%;
+        margin-top: 0;
+    }
+    .footer__map-arrow{
+        width: 15px;
+        height: 40px;
+        background-image: url(../img/arrow.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .footer__map-img{
+        background-image: url(../img/Group.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media(min-width: 1600px){
+    /* Адаптив для больших экранов */
+    header{
+        height: 90px;
+    }
+    .header__logo{
+        width: 230px;
+        height: 33px;
+    }
+    .header__button{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 13px 27px;
+        margin-left: 97px;
+    }
+    .header__button:hover{
+        color: #FFF;
+        border: 1px solid #FFF;
+        opacity: 1;
+    }
+    .header__phone{
+        font-size: 18px;
+        line-height: 23px;
+        margin-right: 126px;
+        margin-left: 30px;
+    }
+    .header__menu-link{
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 30px;
+    }
+    .head{
+        background-size: cover, auto, cover, cover;
+        background-position: 100%, bottom left, bottom, 100%;
+        height: calc(100vh - 90px);
+        padding: 100px 100px 50px 100px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .head__container{
+        height: 760px;
+        max-width: 825px;
+        padding: 120px 0 70px;
+    }
+    .head__picture-desktop{
+        width: 565px;
+        height: 732px;
+    }
+    .head__subtitle{
+        margin-bottom: 20px;
+    }
+    .head__cart{
+        width: 18px;
+    }
+    .head__subtitle h3{
+        font-size: 23px;
+        line-height: 28px;
+    }
+    .head__title{
+        font-size: 52px;
+        line-height: 70px;
+    }
+    .head__info{
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 30px;
+    }
+    .head__button-call{
+        width: 320px;
+        height: 65px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .head__button-desktop{
+        margin: 22px;
+    }
+    .head__pointer-call{
+        width: 65px;
+        height: 65px;
+    }
+    .head__info-call{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .features{
+        background-size: 90%, auto;
+    }
+    .features__block{
+        width: 1277px;
+    }
+    .features__picture{
+        width: 420px;
+        height: 700px;
+    }
+    .features__right-info{
+        margin-top: 140px;
+        width: 620px;
+    }
+    .features__block h2{
+        font-size: 26px;
+        line-height: 41px;
+        padding-bottom: 30px;
+        max-width: 90%;
+    }
+    .features__block p{
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .features__banks{
+        width: 627px;
+        height: 54px;
+    }
+    .features__menu{
+        margin-top: 50px;
+        width: 600px;
+    }
+    .features__menu span{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .cases{
+        background-size: 100%, auto;
+        padding: 120px 20px 100px;
+    }
+    .cases__title-desktop{
+        font-size: 42px;
+        line-height: 41px;
+        margin-bottom: 120px;
+    }
+    .cases__main-block{
+        width: 1408px;
+        height: 573px;
+    }
+    .cases__block{
+        margin: 0 16px;
+        padding: 17px;
+        width: 328px;
+        height: 500px;
+    }
+    .cases__flowers, .cases__climate, .cases__drugstore, .cases__tech{
+        width: 288px;
+        height: 367px;
+    }
+    .cases__block h2{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .cases__block p{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .cases__order{
+        width: 990px;
+        height: 65px;
+        margin-top: 90px;
+        display: flex;
+    }
+    .cases__order-info{
+        margin: 22px 30px;
+    }
+
+    .cases__order-info span{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .cases__order button{
+        width: 240px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .clients{
+        background-size: 70%, auto;
+        padding: 0;
+    }
+    .clients__title{
+        font-size: 42px;
+        line-height: 41px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 110px;
+    }
+    .clients__container{
+        height: 550px;
+    }
+    .clients__block{
+        width: 380px;
+    }
+    .clients__block:last-of-type{
+        margin-right: 0;
+    }
+    .clients__number{
+        font-size: 180px;
+        line-height: 200px;
+    }
+    .clients__logo{
+        top: -145px;
+        width: 300px;
+        height: 300px;
+    }
+    .clients__buttons{
+        width: 198px;
+    }
+    .clients__btn-left, .clients__btn-right{
+        width: 74px;
+        height: 74px;
+    }
+
+    .form{
+        height: calc(100vh - 240px);
+        min-height: calc(100vh - 240px);
+        background-size: 90%, auto, auto;
+        background-position: center top 10px, center, bottom left;
+    }
+    .form__info{
+        width: 665px;
+        margin-right: 100px;
+    }
+    .form__title{
+        font-size: 41px;
+        line-height: 50px;
+    }
+    .form__info h2{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    .form__free{
+        height: 222px;
+        padding: 50px;
+        margin: 69px 0 0;
+    }
+    .form__free h2{
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .form__free p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .form__order{
+        min-width: 350px;
+        padding: 30px;
+    }
+    .form__order input, .form__order textarea{
+        padding: 13px 15px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 15px;
+    }
+    .form__order-info::placeholder{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .form__logo-ok{
+        width: 22px;
+        height: 22px;
+    }
+    .form__order-ok span{
+        font-size: 10px;
+        line-height: 12px;        
+    }
+    .form__order img{
+        width: 204px;
+        margin: 15px 0;
+    }
+    .form__order-button{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    footer{
+        min-height: 240px;
+        height: 240px;
+        padding: 0 20% 0 20%;
+    }
+    .footer__logo{
+        width: 124px;
+        height: 66px;
+    }
+    .footer__social a, .footer__contacts a, .footer__contacts p,.footer__map h3{
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 14px;
+    }
+    .footer__contacts h3, .footer__social h3{
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .footer__social{
+        margin: 30px 0 40px 0;
+    }
+    .footer__map{
+        min-width: 240px;
+        height: 82px;
+    }
+    .footer__map-arrow{
+        width: 20px;
+        height: 53px;
+    }
+}
