@@ -1,62 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<user-page>
+<booking>
     <?php
         include 'components/head.html';
     ?>
-</user-page>
+</booking>
 <body>
     <?php
         include 'components/header.php';
     ?>
     <main>
-        <section class="user-page">
-            <h1 class="user-page__title">Доступные номера на указанные даты:</h1>
-            <div class="user-page__room">
-                <div class="user-page__text">
-                    <h3 class="user-page__title">Номер "Комфорт"</h3>
-                    <p class="user-page__info">
-                        Дата приезда: <span id="dateBegin">21.02.2021</span>
-                    </p>
-                    <p class="user-page__info">
-                        Дата отъезда: <span id="dateEnd">25.02.2021</span>
-                    </p>
-                    <p class="user-page__info">
+        <section class="booking">
+            <h1 class="booking__title">Доступные номера на указанные даты:</h1>
+            <div class="booking__room">
+                <div class="booking__text">
+                    <h3 class="booking__title">Номер "Стандартный одноместный"</h3>
+                    <p class="booking__info">
                         Общая стоимость: <span id="cost">15000</span>р.
                     </p>
-                    <p class="user-page__info">
-                        Описание: <span id="room-info">В данном номере вас ждёт большая двуспальная кровать king size 180*200,
-                        шкаф-купе с зеркальной дверью, оборудованное рабочее место (письменный стол со стулом, настольная лампа),
-                        большой LCD телевизор, холодильник, сейф, фен, вафельный халат и тапочки.</span>
+                    <p class="booking__info">
+                        Описание: <span id="room-info">В данном номере вас ждёт двуспальная кровать,
+                        холодильник, сейф, фен, вафельный халат и тапочки.</span>
+                    </p>
+                    <p class="booking__info">
+                        Доступно номеров: <span id="room-count">10</span>
                     </p>
                     <a href='booking.php'>
                         <button class='room__button'>Забронировать</button>
                     </a>
                 </div>
-                <img src="img\3room.jpg" alt="Фото" class="user-page__picture">
+                <img src="img\3room.jpg" alt="Фото" class="booking__picture">
             </div>
-            <div class="user-page__room">
-                <div class="user-page__text">
-                    <h3 class="user-page__title">Номер "Комфорт"</h3>
-                    <p class="user-page__info">
-                        Дата приезда: <span id="dateBegin">21.02.2021</span>
-                    </p>
-                    <p class="user-page__info">
-                        Дата отъезда: <span id="dateEnd">25.02.2021</span>
-                    </p>
-                    <p class="user-page__info">
+            <div class="booking__room">
+                <div class="booking__text">
+                    <h3 class="booking__title">Номер "Комфорт"</h3>
+                    <p class="booking__info">
                         Общая стоимость: <span id="cost">15000</span>р.
                     </p>
-                    <p class="user-page__info">
+                    <p class="booking__info">
                         Описание: <span id="room-info">В данном номере вас ждёт большая двуспальная кровать king size 180*200,
                         шкаф-купе с зеркальной дверью, оборудованное рабочее место (письменный стол со стулом, настольная лампа),
                         большой LCD телевизор, холодильник, сейф, фен, вафельный халат и тапочки.</span>
+                    </p>
+                    <p class="booking__info">
+                        Доступно номеров: <span id="room-count">3</span>
                     </p>
                     <a href='booking.php'>
                         <button class='room__button'>Забронировать</button>
                     </a>
                 </div>
-                <img src="img\3room.jpg" alt="Фото" class="user-page__picture">
+                <img src="img\3room.jpg" alt="Фото" class="booking__picture">
             </div>
         </section>
     </main>

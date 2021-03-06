@@ -6,6 +6,9 @@
 body{
     font-family: Montserrat;
 }
+button {
+    cursor: pointer;
+}
 #user-page-button {
     display: none;
 }
@@ -305,6 +308,7 @@ main{
 }
 .room__picture{
     width: 400px;
+    height: 250px;
     margin-left: 50px;
 }
 .room__button{
@@ -353,6 +357,7 @@ main{
 }
 .user-page__picture{
     width: 300px;
+    height: 200px;
     margin-left: 50px;
 }
 .form{
@@ -477,6 +482,39 @@ main{
     color: #FFFFFF;
     background: linear-gradient(158.11deg, #DE9B55 -8.73%, #EE5432 93.23%);
     box-shadow: 0px 4px 4px rgba(222, 155, 85, 0.3);
+}
+.booking{
+    background: url(../img/Desktop/BlumeBg.png),
+    url(../img/Desktop/CodeFade.png),
+    url(../img/Desktop/BottomFade.png),
+    radial-gradient(105.09% 130.3% at 52.97% 67.41%, rgba(22, 22, 22, 0) 0%, #161616 100%);
+    background-blend-mode: soft-light, multiply, screen, screen;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: cover, 40%, cover, cover;
+    background-position: 100%, bottom left, bottom, 100%;
+    min-height: calc(75vh);
+    color: #fff;
+    padding: 40px;
+}
+.booking__room {
+    display: flex;
+    padding: 20px 0;
+}
+.booking__title {
+    margin-bottom: 20px;
+}
+.booking__text {
+    width: 50%;
+}
+.booking__picture{
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+}
+.booking .form__order {
+    margin: 0 auto;
+    /* color: #000; */
+    background-color: inherit;
 }
 footer{
     min-height: 100vh;
@@ -631,18 +669,19 @@ footer{
     }
 }
 
-@media(max-width: 700px){
-    .head__container, .room__container, .user-page__room {
+@media(max-width: 830px){
+    .head__container, .room__container, .user-page__room, .booking__room {
         flex-direction: column;
     }
 
-    .user-page__picture, .room__picture{
+    .user-page__picture, .room__picture, .booking__picture{
         width: 80%;
+        height: auto;
         margin-left: 0;
         margin-top: 10px;
     }
 
-    .user-page__text {
+    .user-page__text, .booking__text {
         width: 90%;
     }
 
@@ -654,6 +693,10 @@ footer{
     .head__info {
         margin-top: 20px;
         font-size: 20px;
+    }
+
+    .room__button {
+        background-color: #161616;
     }
 }
 
