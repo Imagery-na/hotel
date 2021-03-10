@@ -1,5 +1,7 @@
 <?php
 // session_start();
+// ".$_SESSION['id']." для условия, если сессия есть, то показываем кнопку Личный кабинет,
+// если нет, то кнопку Регистрация
     echo " 
     <header>
         <div class='header__title'>Гостиница 'Мечта'</div>
@@ -9,15 +11,14 @@
             <a href='bookingForm.php' class='header__menu-link'>Бронирование</a>
         </div>
         <div>
-            <a href='authorizationForm.php'>
-                <button class='header__button'>Вход</button>
+            <a href='authorizationForm.php' class='header__button'>
+                Вход
             </a>
-            <a href='registrationForm.php' id='registration'>
-            ".$_SESSION['id']."
-                <button class='header__button'>Регистрация</button>
+            <a href='registrationForm.php' class='header__button' id='registration'>
+                Регистрация
             </a>
-            <a href='userPage.php' id='user-page-button'>
-                <button class='header__button'>Личный кабинет</button>
+            <a href='userPage.php' class='header__button' id='user-page-button'>
+                Личный кабинет
             </a>
         </div>
     </header>

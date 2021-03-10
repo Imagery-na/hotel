@@ -18,6 +18,9 @@ button {
     top: 30%;
     font-size: 12px;
 }
+.form__order {
+    background: #fff;
+}
 .form__order-wrapper-text {
     display: flex;
     justify-content: start;
@@ -44,6 +47,7 @@ header{
     height: 50px;
     padding: 0 5vw;
     background: #202020;
+    padding: 15px;
 }
 .header__title {
     font-weight: bold;
@@ -56,9 +60,8 @@ header{
     height: 25px;
 }
 .header__button{
-    display: auto;
+    text-decoration: none;
     opacity: 0.7;
-    background-color: inherit;
     border: 1px solid #FF834E;
     box-sizing: border-box;
     font-family: Source Sans Pro;
@@ -418,7 +421,7 @@ main{
 
 .form__order{
     min-width: 280px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     padding: 15px 10px;
@@ -513,8 +516,6 @@ main{
 }
 .booking .form__order {
     margin: 0 auto;
-    /* color: #000; */
-    background-color: inherit;
 }
 footer{
     min-height: 100vh;

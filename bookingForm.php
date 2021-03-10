@@ -16,11 +16,11 @@
             <form class="form__order" action="search.php" method="post">
                 <h2 class="form__title">Бронирование</h2>
                 <div class="form__order-wrapper-text">
-                    <span class="form__order-label">Дата приезда</span>
+                    <span class="form__order-label" type="date">Дата приезда</span>
                     <input type="text" id="datepicker1" placeholder="Дата приезда">
                 </div>
                 <div class="form__order-wrapper-text">
-                    <span class="form__order-label">Дата отъезда</span>
+                    <span class="form__order-label" type="date">Дата отъезда</span>
                     <input type="text" id="datepicker2" placeholder="Дата отъезда">
                 </div>
                 <p class="form__order-title">Выберите тип номера</p>
