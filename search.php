@@ -25,8 +25,8 @@
                     <p class="booking__info">
                         Доступно номеров: <span id="room-count">10</span>
                     </p>
-                    <a href='booking.php'>
-                        <button class='room__button'>Забронировать</button>
+                    <a href='booking.php' class='room__button'>
+                        Выбрать
                     </a>
                 </div>
                 <img src="img\3room.jpg" alt="Фото" class="booking__picture">
@@ -45,8 +45,8 @@
                     <p class="booking__info">
                         Доступно номеров: <span id="room-count">3</span>
                     </p>
-                    <a href='booking.php'>
-                        <button class='room__button'>Забронировать</button>
+                    <a href='booking.php' class='room__button'>
+                        Выбрать
                     </a>
                 </div>
                 <img src="img\3room.jpg" alt="Фото" class="booking__picture">
