@@ -188,8 +188,6 @@ main{
     opacity: 0.5;
 }
 
-
-
 .projects{
     background:#171718;;
     background-image: url(../img/Desktop/BlumeBG-5.png), url(../img/Desktop/Geometry.png), url(../img/Desktop/CodeFade.png);
@@ -516,7 +514,13 @@ main{
     margin-left: 50px;
 }
 .booking .form__order {
-    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.booking .form__order .form__order-label {
+    color: #000;
+    margin-left: 10px;
+    width: 60%;
 }
 footer{
     min-height: 100vh;

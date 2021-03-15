@@ -35,20 +35,20 @@
             <form class="form__order" action="userPage.php" method="post">
                 <h2 class="form__title">Дополнительные услуги</h2>
                 <div class="form__order-wrapper-text">
+                    <input type="checkbox" class="form__order-checkbox">
                     <span class="form__order-label">Завтрак (шведский стол)</span>
-                    <input type="checkbox" class="form__order-checkbox">
                 </div>
                 <div class="form__order-wrapper-text">
+                    <input type="checkbox" class="form__order-checkbox">
                     <span class="form__order-label">Ужин (шведский стол)</span>
-                    <input type="checkbox" class="form__order-checkbox">
                 </div>
                 <div class="form__order-wrapper-text">
+                    <input type="checkbox" class="form__order-checkbox">
                     <span class="form__order-label">Сауна</span>
-                    <input type="checkbox" class="form__order-checkbox">
                 </div>
                 <div class="form__order-wrapper-text">
-                    <span class="form__order-label">Массаж</span>
                     <input type="checkbox" class="form__order-checkbox">
+                    <span class="form__order-label">Массаж</span>
                 </div>
                 <button type="submit" class="form__order-button">ПОДТВЕРДИТЬ БРОНИРОВАНИЕ</button>
             </form>
